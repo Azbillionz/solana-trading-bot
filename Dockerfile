@@ -11,11 +11,11 @@ WORKDIR /app
 
 # Install Python dependencies first (layer cached unless requirements change)
 # Path is relative to repo root — Railway build context is always repo root
-COPY solana-bot/requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the bot source
-COPY solana-bot/ .
+COPY . .
 
 # Create writable runtime directories
 RUN mkdir -p logs
