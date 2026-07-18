@@ -12,7 +12,6 @@ construct==2.10.68
 anchorpy==0.20.1
 loguru==0.7.2
 pydantic==2.9.2
-spl-token==0.3.0
 borsh-construct==0.1.0
 web3>=6.20.0
 eth-account>=0.11.0
